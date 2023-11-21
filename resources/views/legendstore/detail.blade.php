@@ -30,6 +30,10 @@
             <label for="">price</label>
             <input type="text" class="form-control" name="price" id="price" value="{{$car->price}}" disabled>
         </div>
+        <div class="form-group">
+            <label for="">expire</label>
+            <input type="text" class="form-control" name="expire" id="expire" value="{{$car->expire}}" disabled>
+        </div>
         <h4>Stock:</h4>
         <div class="form-group">
             <label for="">Stock</label>
