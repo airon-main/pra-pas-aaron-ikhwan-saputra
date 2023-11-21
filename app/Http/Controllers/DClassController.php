@@ -19,7 +19,7 @@ class DClassController extends Controller
     public function show($id)
     {
         return view("dclass.detail",[
-            "title" => "Detail Student",
+            "title" => "Detail Car",
             "car" => DClassCars::find($id) //* Route model binding,
         ]);
     }

@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\CClassController;
 use App\Http\Controllers\DClassController;
+use App\Http\Controllers\BClassCarsController;
+use App\Http\Controllers\LegendStoreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,8 +31,14 @@ Route::get('/home', function () {
     ]);
 });
 
+Route::get('/dclass/all', [DClassController::class, 'index']);
+Route::get('/dclass/detail/{car}', [DClassController::class, 'show']);
+
 Route::get('/cclass/all', [CClassController::class, 'index']);
 Route::get('/cclass/detail/{car}', [CClassController::class, 'show']);
 
-Route::get('/dclass/all', [DClassController::class, 'index']);
-Route::get('/dclass/detail/{car}', [DClassController::class, 'show']);
+Route::get('/bclass/all', [BClassCarsController::class, 'index']);
+Route::get('/bclass/detail/{car}', [BClassCarsController::class, 'show']);
+
+Route::get('/legendstore/all', [LegendStoreController::class, 'index']);
+Route::get('/legendstore/detail/{car}', [LegendStoreController::class, 'show']);

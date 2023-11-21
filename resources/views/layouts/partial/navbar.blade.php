@@ -16,6 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="../cclass/all">C Class</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../bclass/all">B Class</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../legendstore/all">LegendStore</a>
+                </li>
             </ul>
         </div>
     </div>

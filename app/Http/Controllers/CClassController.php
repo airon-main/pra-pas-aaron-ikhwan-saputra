@@ -19,7 +19,7 @@ class CClassController extends Controller
     public function show($id)
     {
         return view("cclass.detail",[
-            "title" => "Detail Student",
+            "title" => "Detail Car",
             "car" => CClassCars::find($id) //* Route model binding,
         ]);
     }
